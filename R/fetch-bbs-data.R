@@ -65,8 +65,8 @@ fetch_bbs_data <- function(level = "state",
                                           package = "bbsBayes2"))$size)
 
   message(terms)
-  agree <- readline(prompt = "Type \"yes\" (without quotes) to agree: ")
-  if(agree != "yes") return(NULL)
+  # agree <- readline(prompt = "Type \"yes\" (without quotes) to agree: ")
+  # if(agree != "yes") return(NULL)
 
   fetch_bbs_data_internal(level, release, force, quiet, out_file, compression)
 }
